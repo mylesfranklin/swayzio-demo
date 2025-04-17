@@ -1,0 +1,14 @@
+version: 1
+services:
+  frontend:
+    run: pnpm dev --port $PORT
+    env:
+      PORT: 3000
+    cwd: frontend
+    primary: true
+  backend:
+    run: uvicorn main:app --reload --port $PORT
+    env:
+      PORT: 8000
+      PYTHONUNBUFFERED: 1
+    cwd: backend

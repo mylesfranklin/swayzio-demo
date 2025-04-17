@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+musicnn
+essentia==2.1.0
+tensorflow<2.12
+madmom
+openai-whisper
+python-multipart
